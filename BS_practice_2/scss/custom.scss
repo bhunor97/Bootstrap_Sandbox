@@ -1,4 +1,34 @@
-$body-bg: black;
-
+$body-bg: rgb(37, 37, 37);
+$body-color: white;
+$primary: rgb(44, 44, 255);
+$font-family-sans-serif: "poppins", sans-serif;
 // Include any default variable overrides here (though functions won't be available)
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+.custombg {
+  background: black url(../assets/abstract.91fe92b5.jpg);
+  background-size: cover;
+}
+
+.card {
+  border: none;
+}
+
+.card-body {
+  background: rgb(83, 78, 78);
+}
+
+.card-body p {
+  color: rgb(202, 199, 199);
+}
