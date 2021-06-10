@@ -32,3 +32,9 @@ $font-family-sans-serif: "poppins", sans-serif;
 .card-body p {
   color: rgb(202, 199, 199);
 }
+
+.card-img,
+.card-img-top {
+  object-fit: cover;
+  aspect-ratio: 1/0.7;
+}
