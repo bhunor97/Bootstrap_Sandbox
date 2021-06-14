@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- mapbox -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="style.css">
     <title>Frontend Bootcamp</title>
 </head>
@@ -269,7 +271,8 @@
               </div>
         </div>
     </section>
-    <!-- INSTRUCTOR'S GRID CARDS -->
+
+    <!-- INSTRUCTORS GRID CARDS -->
     <section id="instructors" class="p-5 bg-primary">
         <div class="container">
             <h2 class="text-center text-white">Our Instructors</h2>
@@ -279,7 +282,7 @@
                     <div class="card bg-light">
                         <div class="card-body text-center">
                             <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="">
-                            <h3 class="card-title">John Doe</h3>
+                            <h3 class="card-title">Kovács János</h3>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae aliquid corrupti dolorem repudiandae, illo reprehenderit.</p>
                             <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                             <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -293,7 +296,7 @@
                   <div class="card bg-light">
                       <div class="card-body text-center">
                           <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3" alt="">
-                          <h3 class="card-title">Jane Doe</h3>
+                          <h3 class="card-title">Szabó Anna</h3>
                           <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae aliquid corrupti dolorem repudiandae, illo reprehenderit.</p>
                           <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                           <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -307,7 +310,7 @@
                   <div class="card bg-light">
                       <div class="card-body text-center">
                           <img src="https://randomuser.me/api/portraits/men/12.jpg" class="rounded-circle mb-3" alt="">
-                          <h3 class="card-title">Steve Doe</h3>
+                          <h3 class="card-title">Kiss Gergő</h3>
                           <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae aliquid corrupti dolorem repudiandae, illo reprehenderit.</p>
                           <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                           <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -321,7 +324,7 @@
                   <div class="card bg-light">
                       <div class="card-body text-center">
                           <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt="">
-                          <h3 class="card-title">Amy Doe</h3>
+                          <h3 class="card-title">Nagy Lili</h3>
                           <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae aliquid corrupti dolorem repudiandae, illo reprehenderit.</p>
                           <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                           <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -334,8 +337,73 @@
         </div>
     </section>
 
+    <!-- CONTACT & MAP -->
+    <section class="p-5">
+        <div class="container">
+            <!-- g-4 = gutter-4 -->
+            <!-- 
+            "Gutters are the padding between your columns, 
+            used to responsively space and align content in the Bootstrap grid system."
+            -->
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text center mb-4">
+                        Contact Infor
+                    </h2>
+                    <!-- lead = makes it bigger(?) -->
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <!-- fw = font-weight -->
+                            <span class="fw-bold">Main Location:</span> 100 Main Street, Bp. Hungary
+                        </li>
+                        <li class="list-group-item">
+                            <!-- fw = font-weight -->
+                            <span class="fw-bold">Enrollment phone:</span> 301112233
+                        </li>
+                        <li class="list-group-item">
+                            <!-- fw = font-weight -->
+                            <span class="fw-bold">Student Phone:</span> 304445566
+                        </li>
+                        <li class="list-group-item">
+                            <!-- fw = font-weight -->
+                            <span class="fw-bold">Enrollment Email:</span> enroll@frontendtutorial.test
+                        </li>
+                        <li class="list-group-item">
+                            <!-- fw = font-weight -->
+                            <span class="fw-bold">Student Email:</span> student@frontendtutorial.test
+                        </li>
+                    </ul>
+                </div>
+                <!-- go to mapbox.com -->
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="p-5 bg-dark text-white text-center">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2021 Frontend Boortcamp</p>
+            <a href="#" class="p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
 
-
+    <!-- BS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- mapbox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYmh1bm9yOTciLCJhIjoiY2twd3R2NnV1MDM1cDJ2bGc5Y2xvdG9yNyJ9.HEmou4mXz23-KExrjeOFOA';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        // center - takes longitude and latitude
+        center: [19.040236, 47.497913],
+        zoom: 18,
+        }); 
+    </script>
 </body>
 </html>
