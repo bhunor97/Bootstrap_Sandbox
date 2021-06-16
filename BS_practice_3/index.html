@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <title>BS Practice 3</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- MD-SM-LG -->
+        <div class="col-sm-12 col-md-8 col-lg-1">col1</div>
+        <div class="col-sm-12 col-md-4 col-lg-11">col2</div>
+      </div>
+      <div class="row">
+        <!-- ORDER -->
+        <div class="col-md-12 bg-secondary text-light order-md-1 order-sm-2">
+          col3
+        </div>
+        <div class="col-md-12 bg-primary text-light order-md-2 order-sm-1">
+          col4
+        </div>
+      </div>
+      <div class="row">
+        <!-- OFFSETTING -->
+        <div class="col offset-2 bg-secondary">col5</div>
+        <div class="col offset-2 bg-secondary">col6</div>
+      </div>
+      <!-- JUSTIFY CONTENT / ALIGN CONTENT -->
+      <!-- START / END / AROUND / BETWEEN -->
+      <!-- GX = gutter - x = space between the columns -->
+      <div
+        class="
+          row
+          my-custom-row
+          text-dark
+          justify-content-center
+          align-content-end
+          gx-11
+        "
+      >
+        <div class="col">
+          <div class="p-5 bg-dark-text-light text-center border">col7</div>
+        </div>
+        <div class="col">
+          <div class="p-5 bg-dark-text-light text-center border">col7</div>
+        </div>
+      </div>
+    </div>
+    <!-- ACCORDION -->
+    <div class="container p-5">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item_1">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse_1"
+            >
+              Test Accordion Item_1
+            </button>
+          </h2>
+          <div id="collapse_1" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              a, perspiciatis ex obcaecati fuga et? Autem cum placeat quaerat
+              ipsa vero officiis consequuntur aperiam voluptatibus voluptatum
+              debitis. Sequi, eos! Explicabo dignissimos incidunt pariatur ea
+              harum odit velit, non ex voluptate modi doloribus commodi, rerum
+              illum inventore quod aspernatur cupiditate totam.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item_2">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse_2"
+            >
+              Test Accordion Item_2
+            </button>
+          </h2>
+          <div id="collapse_2" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              a, perspiciatis ex obcaecati fuga et? Autem cum placeat quaerat
+              ipsa vero officiis consequuntur aperiam voluptatibus voluptatum
+              debitis. Sequi, eos! Explicabo dignissimos incidunt pariatur ea
+              harum odit velit, non ex voluptate modi doloribus commodi, rerum
+              illum inventore quod aspernatur cupiditate totam.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DROPDOWN -->
+    <div class="container text-center">
+      <!-- Large button groups (default and split) -->
+      <div class="btn-group">
+        <button
+          class="btn btn-secondary btn-lg dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Large button
+        </button>
+        <ul class="dropdown-menu text-center">
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-secondary btn-lg" type="button">
+          Large split button
+        </button>
+        <button
+          type="button"
+          class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          ...
+        </ul>
+      </div>
+    </div>
+
+    <!-- BADGES -->
+    <div class="container-flush text-center bg-dark p-5 mt-5">
+      <span class="badge rounded-pill bg-primary">Primary</span>
+      <span class="badge rounded-pill bg-secondary">Secondary</span>
+      <span class="badge rounded-pill bg-success">Success</span>
+      <span class="badge rounded-pill bg-danger">Danger</span>
+      <span class="badge rounded-pill bg-warning text-dark">Warning</span>
+      <span class="badge rounded-pill bg-info text-dark">Info</span>
+      <span class="badge rounded-pill bg-light text-dark">Light</span>
+      <span class="badge rounded-pill bg-dark">Dark</span>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
