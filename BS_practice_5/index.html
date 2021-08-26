@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- Bootstrap CSS -->
     <link
@@ -18,58 +18,79 @@
   </head>
   <body>
     <!-- NAV START -->
-    <nav class="navbar navbar-expand-sm navbar-light bg light">
-      <a href="#" class="navbar-brand mb-0 h1">
-        <img
-          class="d-inline-block align-top"
-          src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
-          width="30"
-          height="30"
-        />
-        Navbar
-      </a>
-      <!-- NAV ITEMS -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Főoldal</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Iskolánkról</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Általános Iskola</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Művészeti Iskola</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Szervezetek</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Étkezés</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Elérhetőség</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Ökoiskola</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand mb-0 h1">
+          <img
+            class="d-inline-block align-top"
+            src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
+            width="30"
+            height="30"
+          />
+          Arany János Általános Iskola
+        </a>
+        <!-- BUTTON -->
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- NAV ITEMS -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link active" href="#">Főoldal</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Iskolánkról</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a href="#" class="dropdown-item">Iskolánk története</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Munkatársak</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Általános Iskola</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Művészeti Iskola</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Szervezetek</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Étkezés</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Elérhetőség</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ökoiskola</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
