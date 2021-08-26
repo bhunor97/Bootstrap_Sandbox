@@ -1,3 +1,18 @@
 body {
   height: 200vh;
 }
+
+.carousel-item {
+  height: 32rem;
+  background: rgb(148, 148, 148);
+  color: white;
+  position: relative;
+}
+
+#carouselContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+}
