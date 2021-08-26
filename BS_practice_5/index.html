@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- NAV START -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a href="#" class="navbar-brand mb-0 h1">
           <img
@@ -47,47 +47,155 @@
             <li class="nav-item active">
               <a class="nav-link active" href="#">Főoldal</a>
             </li>
-
+            <!-- iskTört start -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                id="navbarDropdown"
+                id="iskTört"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 >Iskolánkról</a
               >
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- iskTört dropdown items-->
+              <ul class="dropdown-menu" aria-labelledby="iskTört">
                 <li>
                   <a href="#" class="dropdown-item">Iskolánk története</a>
                 </li>
                 <li><a href="#" class="dropdown-item">Munkatársak</a></li>
               </ul>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Általános Iskola</a>
+            <!-- áltIsk start -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="áltIsk"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Általános Iskola</a
+              >
+              <!-- áltIsk dropdown items -->
+              <ul class="dropdown-menu" aria-labelledby="áltIsk">
+                <li>
+                  <a href="#" class="dropdown-item">Beiskolázás</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Dokumentumok</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Órarend</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Tantárgyak</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">2020/2021 Éves ütemterv</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Gyermekvédelem</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Tehetséggondozás</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Büszkeségeink</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Galéria</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Videók</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Különös közzététel</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Választható hitoktatás</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item"
+                    >Orszrágos kompetenciamérés</a
+                  >
+                </li>
+              </ul>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Művészeti Iskola</a>
+            <!-- művIsk start -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="művIsk"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Művészeti Iskola</a
+              >
+              <!-- művIsk dropdown items -->
+              <ul class="dropdown-menu" aria-labelledby="művIsk">
+                <li>
+                  <a href="#" class="dropdown-item">A művészetoktatásról</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Tanszakok</a></li>
+                <li>
+                  <a href="#" class="dropdown-item">Térítési és tandíj</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item"
+                    >Jelentkezés művészeti iskolába</a
+                  >
+                </li>
+                <li><a href="#" class="dropdown-item">Galéria</a></li>
+                <li><a href="#" class="dropdown-item">Videók</a></li>
+              </ul>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Szervezetek</a>
+            <!-- szerv start -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="szerv"
+                role="button"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Szervezetek</a
+              >
+              <!-- szerv dropdown items -->
+              <ul class="dropdown-menu" aria-labelledby="szerv">
+                <li><a href="#" class="dropdown-item">Alaptítvány</a></li>
+                <li><a href="#" class="dropdown-item">DÖK</a></li>
+                <li>
+                  <a href="#" class="dropdown-item">Szülői szervezetek</a>
+                </li>
+              </ul>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Étkezés</a>
+            <!-- étk start -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="étk"
+                role="button"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Étkezés</a
+              >
+              <!-- étk dropdown items -->
+              <ul class="dropdown-menu" aria-labelledby="étk">
+                <li><a href="#" class="dropdown-item">Ebédbefizetés</a></li>
+                <li><a href="#" class="dropdown-item">Online befizetés</a></li>
+                <li><a href="#" class="dropdown-item">Étlap</a></li>
+              </ul>
             </li>
-
+            <!-- elérh start -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Elérhetőség</a>
+              <a class="nav-link" id="elérh" href="#">Elérhetőség</a>
             </li>
-
+            <!-- öko start -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Ökoiskola</a>
+              <a class="nav-link" id="öko" href="#">Ökoiskola</a>
             </li>
           </ul>
         </div>
