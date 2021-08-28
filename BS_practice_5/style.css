@@ -4,9 +4,49 @@ body {
 
 .carousel-item {
   height: 32rem;
-  background: rgb(148, 148, 148);
+  background: black;
   color: white;
   position: relative;
+}
+
+/* SLIDER IMAGES */
+.slider_1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../BS_practice_5/pics/pic_1.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.slider_2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../BS_practice_5/pics/pic_2.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.slider_3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../BS_practice_5/pics/pic_3.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
 }
 
 #carouselContainer {
