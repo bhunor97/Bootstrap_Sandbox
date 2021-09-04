@@ -1,10 +1,12 @@
-/* SZÍNEK */
 :root {
+  /* SZÍNEK */
   --szín_1: #282740;
   --szín_2: #343bbf;
   --szín_3: #4973f2;
   --szín_4: #f2ea77;
   --szín_5: #f2f2f2;
+  /* MÉRETEK */
+  --ikon_méret_1: 3em;
 }
 
 body {
@@ -67,16 +69,21 @@ body {
   padding-bottom: 50px;
 }
 
-/* FELSŐ IKONOK */
+/* Közép-felső ikonok */
 #ikon_1,
 #ikon_2,
 #ikon_3,
 #ikon_4,
 #ikon_5,
 #ikon_6 {
-  font-size: 3em;
+  font-size: var(--ikon_méret_1);
 }
 
-.ikon_sáv_container {
-  background-color: "";
+.felső_ikon_div {
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+.felső_ikon_div:hover {
+  transform: scale(1.2);
 }
