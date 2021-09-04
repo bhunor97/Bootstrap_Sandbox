@@ -6,7 +6,7 @@
   --szín_4: #f2ea77;
   --szín_5: #f2f2f2;
   /* MÉRETEK */
-  --ikon_méret_1: 3em;
+  --ikon_méret_1: 3rem;
 }
 
 /* CAROUSEL */
@@ -78,10 +78,13 @@
 .felső_ikon_div {
   cursor: pointer;
   transition: 0.1s ease;
+  border: 0.5px solid transparent;
+  border-radius: 25px;
 }
 
 .felső_ikon_div:hover {
   transform: scale(1.2);
+  border: 0.5px solid #fff;
 }
 
 .közép_szekció {
