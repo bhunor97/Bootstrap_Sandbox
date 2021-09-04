@@ -1,7 +1,17 @@
+/* SZÍNEK */
+:root {
+  --szín_1: #282740;
+  --szín_2: #343bbf;
+  --szín_3: #4973f2;
+  --szín_4: #f2ea77;
+  --szín_5: #f2f2f2;
+}
+
 body {
   height: 200vh;
 }
 
+/* CAROUSEL */
 .carousel-item {
   height: 32rem;
   background: black;
@@ -9,7 +19,7 @@ body {
   position: relative;
 }
 
-/* SLIDER IMAGES */
+/* CAROUSEL - SLIDER IMAGES */
 .slider_1::before {
   content: "";
   position: absolute;
@@ -44,7 +54,7 @@ body {
   left: 0;
   right: 0;
   background-image: url(../BS_practice_5/pics/pic_3.jpg);
-  background-position: center;
+  background-position: cover;
   background-size: cover;
   opacity: 0.5;
 }
@@ -55,4 +65,18 @@ body {
   left: 0;
   right: 0;
   padding-bottom: 50px;
+}
+
+/* FELSŐ IKONOK */
+#ikon_1,
+#ikon_2,
+#ikon_3,
+#ikon_4,
+#ikon_5,
+#ikon_6 {
+  font-size: 3em;
+}
+
+.ikon_sáv_container {
+  background-color: "";
 }
