@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <!-- Szükséges meta tagok -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- CSS -->
@@ -18,23 +18,31 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,400&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Iskola Projekt Teszt</title>
   </head>
   <body>
-    <!-- NAV START -->
+    <!-- Navigációs sáv: start -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a href="#" class="navbar-brand mb-0 h1">
-          <img
+          <!-- Nav-sáv ikon -->
+          <!-- <img
             class="d-inline-block align-top"
             src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
             width="30"
             height="30"
-          />
+          /> -->
           Arany János Általános Iskola
         </a>
-        <!-- BUTTON -->
+        <!-- Nav sáv gomb -->
         <button
           type="button"
           class="navbar-toggler"
@@ -46,7 +54,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- NAV ITEMS -->
+        <!-- Nav-sáv item -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
@@ -63,7 +71,7 @@
                 aria-expanded="false"
                 >Iskolánkról</a
               >
-              <!-- iskTört dropdown items-->
+              <!-- iskTört legördülő részek-->
               <ul class="dropdown-menu" aria-labelledby="iskTört">
                 <li>
                   <a href="#" class="dropdown-item">Iskolánk története</a>
@@ -82,7 +90,7 @@
                 aria-expanded="false"
                 >Általános Iskola</a
               >
-              <!-- áltIsk dropdown items -->
+              <!-- áltIsk legördülő részek -->
               <ul class="dropdown-menu" aria-labelledby="áltIsk">
                 <li>
                   <a href="#" class="dropdown-item">Beiskolázás</a>
@@ -138,7 +146,7 @@
                 aria-expanded="false"
                 >Művészeti Iskola</a
               >
-              <!-- művIsk dropdown items -->
+              <!-- művIsk legördülő részek -->
               <ul class="dropdown-menu" aria-labelledby="művIsk">
                 <li>
                   <a href="#" class="dropdown-item">A művészetoktatásról</a>
@@ -167,7 +175,7 @@
                 aria-expanded="false"
                 >Szervezetek</a
               >
-              <!-- szerv dropdown items -->
+              <!-- szerv legördülő részek -->
               <ul class="dropdown-menu" aria-labelledby="szerv">
                 <li><a href="#" class="dropdown-item">Alaptítvány</a></li>
                 <li><a href="#" class="dropdown-item">DÖK</a></li>
@@ -187,7 +195,7 @@
                 aria-expanded="false"
                 >Étkezés</a
               >
-              <!-- étk dropdown items -->
+              <!-- étk legördülő részek -->
               <ul class="dropdown-menu" aria-labelledby="étk">
                 <li><a href="#" class="dropdown-item">Ebédbefizetés</a></li>
                 <li><a href="#" class="dropdown-item">Online befizetés</a></li>
@@ -206,10 +214,11 @@
         </div>
       </div>
     </nav>
+    <!-- Navigációs sáv: end -->
 
-    <!-- CAROUSEL -->
+    <!-- Körhinta: start -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-      <!-- sliders -->
+      <!-- csúszkák -->
       <ol class="carousel-indicators">
         <li
           data-bs-target="#myCarousel"
@@ -260,6 +269,8 @@
         </div>
       </div>
     </div>
+    <!-- Körhinta: end -->
+
     <!-- Felső ikon sáv: start -->
     <div class="container-fluid p-3 bg-primary text-light">
       <div class="container">
@@ -293,7 +304,7 @@
     </div>
     <!-- Felső ikon sáv: end -->
 
-    <!-- Felső hullám: start -->
+    <!-- Középső hullám: start -->
     <svg
       class="hullám"
       xmlns="http://www.w3.org/2000/svg"
@@ -305,7 +316,7 @@
         d="M0,288L80,261.3C160,235,320,181,480,176C640,171,800,213,960,213.3C1120,213,1280,171,1360,149.3L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
       ></path>
     </svg>
-    <!-- Felső hullám: end -->
+    <!-- Középső hullám: end -->
 
     <!-- Üdvözlés rész: start -->
     <div class="container-fluid">
@@ -333,36 +344,129 @@
     <!-- Alsó hullám: end -->
 
     <!-- Szöveg törzs: start -->
-    <div class="container-fluid bg-primary p-5">
+    <div class="container-fluid bg-primary p-5 törzs_container">
       <div class="container text-center p-5">
+        <!-- bejegyzés_1 -->
         <h2 class="text-light fw-bolder">
           Megnyílt a multischool rendszer - már lehetséges a szeptemberi
           ebédbefizetés!
         </h2>
         <a class="text-light fw-light" href="#">További Információk</a>
-        <div class="container p-5">
-          <p class="text-light fw-normal">
+
+        <!-- bejegyzés_2 -->
+        <div class="container pt-5">
+          <h2 class="text-light fw-light">
             Kedves Szülők! Kérjük Önöket, hogy gyermekük bizonyitványának
             átvétele ügyeleti napokon, vagy előre egyeztetett időpont alapján
             keressék fel intézményünket.Köszönjük.
-          </p>
+          </h2>
         </div>
 
-        <div class="container text-light fw-bold p-5">
-          <p>Nyári általános tájékoztató Kötelező és ajánlott olvasmányok</p>
+        <!-- bejegyzés_3 -->
+        <div class="container text-light fw-bold pt-5">
+          <h3>Nyári általános tájékoztató Kötelező és ajánlott olvasmányok</h3>
+          <div class="list-group pt-2">
+            <a href="#" class="list-group-item list-group-item-action">2. a</a>
 
-          <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action">2.a</a>
-
-            <a href="#" class="list-group-item list-group-item-action">2.b</a>
+            <a href="#" class="list-group-item list-group-item-action">2. b</a>
             <a href="#" class="list-group-item list-group-item-action"
-              >3.évfolyam</a
+              >3. évfolyam</a
             >
+          </div>
+        </div>
+
+        <!-- bejegyzés_4 -->
+        <div class="bg-light text-dark border border-5 mt-5">
+          <div class="h4 fw-bold p-3">Taneszköz lista</div>
+          <div class="row">
+            <div class="col p-2">
+              <a href="#">1.a tanszerlista</a>
+            </div>
+            <div class="col p-2"><a href="#">1.b tanszerlista</a></div>
+          </div>
+          <div class="row">
+            <div class="col p-2"><a href="#">2.a tanszerlista</a></div>
+            <div class="col p-2"><a href="#">2.b tanszerlista</a></div>
+          </div>
+          <div class="row">
+            <div class="col p-2"><a href="#">3.a tanszerlista</a></div>
+            <div class="col p-2"><a href="#">3.b tanszerlista</a></div>
+          </div>
+          <div class="row">
+            <div class="col p-2"><a href="#">4.a tanszerlista</a></div>
+            <div class="col p-2"><a href="#">4.b tanszerlista</a></div>
+          </div>
+          <div class="row">
+            <div class="col p-2"><a href="#">5-8 tanszerlista</a></div>
           </div>
         </div>
       </div>
     </div>
     <!-- Szöveg törzs: end -->
+
+    <!-- Alsó hullám: start -->
+    <svg
+      class="alsó_hullám"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 180"
+    >
+      <path
+        fill="#0d6efd"
+        fill-opacity="1"
+        d="M0,128L60,144C120,160,240,192,360,170.7C480,149,600,75,720,42.7C840,11,960,21,1080,42.7C1200,64,1320,96,1380,112L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- Alsó hullám: end -->
+
+    <!-- Elérhetőségek: start -->
+    <section class="container-fluid p-5">
+      <!-- cím/tel/mail/fax: start -->
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Elérhetőségek</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold"> Cím:</span> 1145 Budapest, Újvidék tér 3.
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold"> Telefon:</span> (1) 467-0653; (1)
+                383-6398
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold"> Email:</span>
+                titkarsag@aranyjanos-zuglo.sulinet.hu
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold"> Fax:</span>
+                (1) 222-1475
+              </li>
+            </ul>
+          </div>
+          <!-- cím/tel/mail/fax: end -->
+
+          <!-- térkép: start -->
+          <div class="col text-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3204.7842990468116!2d19.104253626014582!3d47.511501691938584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741db62ee077985%3A0x73c12242a305204d!2zQnVkYXBlc3QsIMOaanZpZMOpayB0w6lyIDMsIDExNDU!5e0!3m2!1shu!2shu!4v1630779095481!5m2!1shu!2shu"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <!-- térkép: end -->
+        </div>
+      </div>
+    </section>
+    <!-- Elérhetőségek: end -->
+
+    <!-- Lábléc: start -->
+    <footer class="bg-dark text-center position-relative p-5">
+      <div class="container"></div>
+    </footer>
+    <!-- Lábléc: end -->
 
     <!-- Bootstrap Javascript link -->
     <script

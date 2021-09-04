@@ -7,7 +7,15 @@
   --szín_5: #f2f2f2;
   /* MÉRETEK */
   --ikon_méret_1: 3rem;
+  /* BETŰTÍPUS */
+  --betűtípus_1: "Poppins", sans-serif;
+  --betűtípus_2: "PT Serif", serif;
 }
+
+/* * {
+  font-family: var(--betűtípus_1);
+  font-weight: 300;
+} */
 
 /* CAROUSEL */
 .carousel-item {
@@ -86,3 +94,11 @@
   transform: scale(1.2);
   border: 0.5px solid #fff;
 }
+
+.törzs_container {
+  height: auto;
+}
+
+/* .alsó_hullám {
+  background-color: black;
+} */
