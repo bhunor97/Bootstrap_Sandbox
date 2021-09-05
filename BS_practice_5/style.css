@@ -65,6 +65,19 @@
   opacity: 0.5;
 }
 
+.slider_4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../BS_practice_5/pics/tánc_2.jpg);
+  background-position: cover;
+  background-size: cover;
+  opacity: 0.5;
+}
+
 #carouselContainer {
   position: absolute;
   bottom: 0;
