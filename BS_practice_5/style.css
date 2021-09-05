@@ -95,10 +95,31 @@
   border: 0.5px solid #fff;
 }
 
-.törzs_container {
+/* Kártyák */
+.card {
+  height: 40rem;
+  width: 30rem;
+}
+
+.card-img-top {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  /* height: 25rem; */
+}
+
+/* Lábléc */
+.card {
   height: auto;
 }
 
-/* .alsó_hullám {
-  background-color: black;
-} */
+.footer_img {
+  border-radius: 25px;
+  height: 100px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.footer_img:hover {
+  transform: translateY(-10%);
+}
